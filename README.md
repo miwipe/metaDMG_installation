@@ -1,5 +1,5 @@
-# metaDMG Installation and run commands
-This installs a previous version of metaDMG that are compatible with the python GUI dashboard. A new and updated version will soon be released.
+# Installing metaDMG v0.38.0 and typical run commands
+This installs a version of metaDMG that are compatible with the python GUI dashboard. We are working on a new, improved version which hopefully will be released soon.
 
 # Installing metaDMG using conda and pip
 
@@ -25,7 +25,7 @@ cd metaDMG-cpp
 make clean && make CPPFLAGS="-L${CONDA_PREFIX}/lib -I${CONDA_PREFIX}/include" HTSSRC=systemwide -j 8
 ```
 
-### Installing the viz (visualizer/dashboard) 
+### Installing the viz (visualizer/dashboard)
 ```
 pip install git+https://github.com/metaDMG-dev/metaDMG-core@stopiferrors_branch
 pip install iminuit==2.17.0 numpyro==0.10.1 joblib==1.2.0 numba==0.56.2 flatbuffers==22.9.24 logger_tt==1.7.2 psutil==5.9.4
@@ -54,7 +54,7 @@ metaDMG dashboard config.yaml
 ssh -L 8050:127.0.0.1:8050 -N User@YourServer
 ```
 
-### Now open your browser (I use Chrome) and paste this address and it should open the GUI. Depending on the speed of your system and size of data, it sometimes takes a bit of time for the server to come up running. But shouldn’t be more than 5 minutes max. Usually, it is seconds. 
+### Now open your browser (I use Chrome) and paste this address and it should open the GUI. Depending on the speed of your system and size of data, it sometimes takes a bit of time for the server to come up running. But shouldn’t be more than 5 minutes max. Usually, it is seconds.
 ```
 http://0.0.0.0:8050/
 ```
@@ -63,4 +63,3 @@ http://0.0.0.0:8050/
 ```
 metaDMG convert --output MetaDMG_results.csv --add-fit-predictions
 ```
-
