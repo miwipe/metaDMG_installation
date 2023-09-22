@@ -54,7 +54,7 @@ metaDMG dashboard config.yaml
 ssh -L 8050:127.0.0.1:8050 -N User@YourServer
 ```
 
-### Now open your browser (I use Chrome) and paste this address
+### Now open your browser (I use Chrome) and paste this address and it should open the GUI. Depending on the speed of your system and size of data, it sometimes takes a bit of time for the server to come up running. But shouldn’t be more than 5 minutes max. Usually, it is seconds. 
 ```
 http://0.0.0.0:8050/
 ```
