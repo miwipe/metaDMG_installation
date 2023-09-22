@@ -1,5 +1,5 @@
-# metaDMG_installation
-This installs a previous version of metaDMG that are compatible with the GUI dashboard. A new and updated version will soon be released.
+# metaDMG Installation and run commands
+This installs a previous version of metaDMG that are compatible with the python GUI dashboard. A new and updated version will soon be released.
 
 # Installing metaDMG using conda and pip
 
