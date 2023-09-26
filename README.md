@@ -17,12 +17,13 @@ git submodule update --init --recursive
 make
 ```
 
-### Install the metaDMG-cpp if the HTSSRC=systemwide doesn't work, replace systemwide with the path to the htslib folder
+### Install the metaDMG-cpp if the HTSSRC=systemwide doesn't work, replace systemwide with the path to the htslib folder, the previous commit version is compatible with the metaDMG[viz]
 ```
 cd ../
 git clone https://github.com/metaDMG-dev/metaDMG-cpp.git
 cd metaDMG-cpp
 make clean && make CPPFLAGS="-L${CONDA_PREFIX}/lib -I${CONDA_PREFIX}/include" HTSSRC=systemwide -j 8
+git checkout abd303e808c7d74166f305ac88ef538af9b1d44d
 ```
 
 ### Installing the viz (visualizer/dashboard)
